@@ -1,0 +1,95 @@
+/* Body */
+body {
+  text-align: center;
+  background-color: black;
+}
+
+/* Media Queries */
+@media screen and (max-width: 750px) {
+  .heading {
+    padding: 5% 0;
+    color: white;
+  }
+  .board {
+    padding: 2% 20%;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 900px) {
+  .heading {
+    padding: 5% 0;
+    color: white;
+  }
+  .board {
+    padding: 2% 25%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .heading {
+    padding: 2% 0;
+    color: white;
+  }
+  .board {
+    padding: 3% 35%;
+    text-align: center;
+  }
+}
+
+/* Blocks */
+.block {
+  background-color: black;
+  aspect-ratio: 1;
+  border: 3px solid whitesmoke;
+}
+
+#b00 {
+  border-left: 0;
+  border-top: 0;
+}
+
+#b01 {
+  border-top: 0;
+}
+
+#b02 {
+  border-top: 0;
+  border-right: 0;
+}
+
+#b10 {
+  border-left: 0;
+}
+
+
+#b12 {
+  border-right: 0;
+}
+
+#b20 {
+  border-left: 0;
+  border-bottom: 0;
+}
+
+#b21 {
+  border-bottom: 0;
+}
+
+#b22 {
+  border-bottom: 0;
+  border-right: 0;
+}
+
+/* O , X */
+p {
+  font-size: 50px;
+  color: white;
+  position: relative;
+  top: 20%;
+}
+
+.O {
+  background-color: rgb(117, 12, 65, 1);
+}
+
+.X {
+  background-color: rgb(0, 41, 79);
+}

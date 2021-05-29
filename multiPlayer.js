@@ -47,18 +47,28 @@ for (let i = 0; i < 3; i++) {
             finished = check();
             if (finished) {
               document.querySelector("h1").innerHTML =
-                "Player " + player + " wins ";
-              document.querySelector("h1").classList.add(player);
+                "PLAYER " + player + " WINS ";
+              document.querySelector("h1").className = player;
             } else if (filled == 9) {
-              document.querySelector("h1").innerHTML = "Its a draw";
+              document.querySelector("h1").innerHTML = "ITS A DRAW";
+              document.querySelector("h1").className = "";
+              finished = true;
             }
           }
           if (player == "X") {
             this.classList.add("X");
             player = "O";
+
           } else {
             this.classList.add("O");
             player = "X";
+
+          }
+          if (finished == false) {
+            document.querySelector("h1").innerHTML =
+              "PLAYER " + player + " 's TURN ";
+            document.querySelector("h1").className =
+              player;
           }
         }
       }

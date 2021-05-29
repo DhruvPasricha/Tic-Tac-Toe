@@ -1,11 +1,46 @@
-body {
+/* index.html */
+* {
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 95vh;
+  margin: 0px;
   background-color: black;
+  display: flexbox;
+  color: white;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------*/
+/* index */
+/* ---------------------------------------------------------------------------------------------------------------------------------------*/
+
+.heading {
+  margin-top: 35vh;
+  margin-bottom: 5vh;
+}
+
+.playBtn {
+  width: 200px;
+}
+
+.dropdown-menu {
+  background-color: black !important;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------*/
+/* singlePlayer, multiPlayer */
+/* ---------------------------------------------------------------------------------------------------------------------------------------*/
+
+.heading1 {
+  margin-top: 5vh;
+  margin-bottom: 2vh;
 }
 
 /* Media Queries */
 @media screen and (max-width: 750px) {
-  .heading {
+  .heading1 {
     padding: 5% 0;
     color: white;
   }
@@ -14,7 +49,7 @@ body {
   }
 }
 @media screen and (min-width: 750px) and (max-width: 900px) {
-  .heading {
+  .heading1 {
     padding: 5% 0;
     color: white;
   }
@@ -57,7 +92,6 @@ body {
 #b10 {
   border-left: 0;
 }
-
 
 #b12 {
   border-right: 0;
